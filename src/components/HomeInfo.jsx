@@ -1,19 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { arrow } from "../assets/icons";
-const InfoBox = ({ text, link, btnText }) => (
-    <div className="info-box">
-        <p className="font-medium sm:text-cl text-center">{text}</p>
-    <Link to={link} className="neo-brutalism-white net-btn">
-    {btnText}
-    </Link></div>
-  );
-const renderContent = {
-  
-  2: (<InfoBox btnText='Learn more' link='/about' text=' '/> ),
-  3: <h1>3</h1>,
-  4: <h1>4</h1>,
-};
+
 
 const HomeInfo = ({ currentStage }) => {
     if (currentStage === 1)
